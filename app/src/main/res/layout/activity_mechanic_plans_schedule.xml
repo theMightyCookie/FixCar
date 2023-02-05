@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".mechanicPlansSchedule">
+
+    <EditText
+        android:id="@+id/joiStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/luniStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/martiStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/dumincaStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/miercuriStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/martiStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/sambataStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/vineriStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/sambataStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="388dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/luniStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/miercuriStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/duminicaStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="448dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/vineriStart"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/luniStop"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/joiStop"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Planificator saptamanal"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <CheckBox
+        android:id="@+id/joi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joi"
+        app:layout_constraintBottom_toBottomOf="@+id/joiStart"
+        app:layout_constraintEnd_toStartOf="@+id/joiStart"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/marti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marti"
+        app:layout_constraintBottom_toBottomOf="@+id/martiStart"
+        app:layout_constraintEnd_toStartOf="@+id/martiStart"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/miercuri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miercuri"
+        app:layout_constraintBottom_toTopOf="@+id/joiStart"
+        app:layout_constraintEnd_toStartOf="@+id/miercuriStart"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <CheckBox
+        android:id="@+id/luni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/luniStart"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <CheckBox
+        android:id="@+id/sambata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sambata"
+        app:layout_constraintBottom_toBottomOf="@+id/sambataStart"
+        app:layout_constraintEnd_toStartOf="@+id/sambataStart"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/duminca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duminica"
+        app:layout_constraintBottom_toBottomOf="@+id/duminicaStart"
+        app:layout_constraintEnd_toStartOf="@+id/duminicaStart"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/vineri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vineri"
+        app:layout_constraintBottom_toTopOf="@+id/sambataStart"
+        app:layout_constraintEnd_toStartOf="@+id/vineriStart"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="247dp"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_bg"
+        android:paddingHorizontal="50dp"
+        android:paddingStart="70dp"
+        android:text="Salvare"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

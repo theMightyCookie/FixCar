@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.fixcar">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppCompat">
+        <activity
+            android:name=".clientSearchBar"
+            android:exported="false" />
+        <activity
+            android:name=".clientMakeAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".clientSeeMechanicSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".clientSeeAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".clientWriteReview"
+            android:exported="false" />
+        <activity
+            android:name=".clientConfigurationForm"
+            android:exported="false" />
+        <activity
+            android:name=".clientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicReviews"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicProfile"
+            android:exported="false" />
+        <activity
+            android:name=".searchMechanic"
+            android:exported="false" />
+        <activity
+            android:name=".clientLandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicViewClients"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicViewAppointments"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicConfigurationForm"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicPlansSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".mechanicLandingPage"
+            android:exported="false" />
+        <activity
+            android:name=".AccountSettings"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileChoice"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

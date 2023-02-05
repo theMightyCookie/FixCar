@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "446506524157",
+    "project_id": "fixcar-1b5cf",
+    "storage_bucket": "fixcar-1b5cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446506524157:android:34f2490e574dbc112acd94",
+        "android_client_info": {
+          "package_name": "com.example.fixcar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446506524157-lmm8shb0frvn052lssgebghapklbjpr3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fixcar",
+            "certificate_hash": "aa7b93482b01a97c57a3109ca8aad18f2a2faebb"
+          }
+        },
+        {
+          "client_id": "446506524157-23qat10d48fmrb969fdlqqlkl6u76rq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpYtcX4ym_xZw8Ys9gvkF8S4dSMPhsiXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446506524157-23qat10d48fmrb969fdlqqlkl6u76rq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
