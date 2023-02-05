@@ -50,7 +50,7 @@ public class clientSearchBar extends AppCompatActivity {
 
             }
         };
-        dbRef.addListenerForSingleValueEvent(event);
+        databaseReference.child("users").addListenerForSingleValueEvent(event);
 
 
     }
