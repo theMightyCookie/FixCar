@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/layout/activity_client_search_mechanic.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/activity_client_see_appointments.xml" value="0.14175724637681159" />
         <entry key="app/src/main/res/layout/activity_client_see_mechanic_schedule.xml" value="0.11979166666666667" />
+        <entry key="app/src/main/res/layout/activity_client_write_review.xml" value="0.24479166666666666" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.18885869565217392" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1109375" />
         <entry key="app/src/main/res/layout/activity_mechanic_configuration_form.xml" value="0.14719202898550723" />
