@@ -4,6 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".mechanicReviews">
+
+
+    <TextView
+        android:id="@+id/reviewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ai primit urmatoarele review-uri"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/reviewAdd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clientProfile"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/clientProfile"
+        android:layout_width="199dp"
+        android:layout_height="180dp"
+        android:src="@drawable/service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+
+
+    <EditText
+        android:id="@+id/reviewRead"
+        android:layout_width="285dp"
+        android:layout_height="120dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.602" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
