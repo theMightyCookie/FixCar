@@ -67,7 +67,7 @@ public class clientMakeAppointments extends AppCompatActivity {
                         databaseReference.child("users").child(currentuser.getUid()).child("mechanic").child("appointment").setValue(appointmentText);
 
                         Toast.makeText(clientMakeAppointments.this, "Programarea a fost creata cu succes!", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(clientMakeAppointments.this, mechanicLandingPage.class));
+
                     }
 
                     @Override

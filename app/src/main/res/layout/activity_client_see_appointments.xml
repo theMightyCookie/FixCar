@@ -15,7 +15,7 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp"
         android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/calendarView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -47,6 +47,7 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:text="Nu exista programari"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +59,8 @@
         android:layout_width="229dp"
         android:layout_height="220dp"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="132dp" />
+        tools:layout_editor_absoluteY="132dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/anulare"
