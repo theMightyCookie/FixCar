@@ -43,37 +43,37 @@ public class clientConfigurationForm extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 assert currentuser != null;
-                if (!snapshot.child(currentuser.getUid()).child("client").child("name").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("name").getValue() == null)) {
                     name.setText(snapshot.child(currentuser.getUid()).child("client").child("name").getValue().toString());
                 } else {
                     name.setText("Nume");
                 }
 
-                if (!snapshot.child(currentuser.getUid()).child("client").child("city").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("city").getValue() == null)) {
                     city.setText(snapshot.child(currentuser.getUid()).child("client").child("city").getValue().toString());
                 } else {
                     city.setText("Oras");
                 }
 
-                if (!snapshot.child(currentuser.getUid()).child("client").child("address").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("address").getValue() == null)) {
                     address.setText(snapshot.child(currentuser.getUid()).child("client").child("address").getValue().toString());
                 } else {
                     address.setText("Adresa");
                 }
 
-                if (!snapshot.child(currentuser.getUid()).child("client").child("car").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("car").getValue() == null)) {
                     car.setText(snapshot.child(currentuser.getUid()).child("client").child("car").getValue().toString());
                 } else {
-                    car.setText("Vechime in service");
+                    car.setText("Model masina");
                 }
 
-                if (!snapshot.child(currentuser.getUid()).child("client").child("phone").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("phone").getValue() == null)) {
                     phone.setText(snapshot.child(currentuser.getUid()).child("client").child("phone").getValue().toString());
                 } else {
                     phone.setText("Telefon");
                 }
 
-                if (!snapshot.child(currentuser.getUid()).child("client").child("email2").getValue().toString().isEmpty()) {
+                if (!(snapshot.child(currentuser.getUid()).child("client").child("email2").getValue() == null)) {
                     email.setText(snapshot.child(currentuser.getUid()).child("client").child("email2").getValue().toString());
                 } else {
                     email.setText("Email");
