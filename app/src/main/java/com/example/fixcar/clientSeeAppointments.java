@@ -33,6 +33,7 @@ public class clientSeeAppointments extends AppCompatActivity {
 
         final Button saveBtn = findViewById(R.id.btnSave);
         final EditText appointment = findViewById(R.id.editTextTextMultiLine);
+        final Button cancelBtn = findViewById(R.id.anulare);
 
         databaseReference.child("users").addListenerForSingleValueEvent(new ValueEventListener() {
             @SuppressLint("SetTextI18n")
@@ -77,6 +78,27 @@ public class clientSeeAppointments extends AppCompatActivity {
                 });
 
 
+            }
+        });
+        cancelBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String appointmentText = "Nu exista programari";
+
+                databaseReference.addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+                        databaseReference.child("users").child(currentuser.getUid()).child("mechanic").child("appointment").setValue(appointmentText);
+
+                        Toast.makeText(clientSeeAppointments.this, "Programarea a fost anulata cu succes!", Toast.LENGTH_SHORT).show();
+
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
 
 
             }
