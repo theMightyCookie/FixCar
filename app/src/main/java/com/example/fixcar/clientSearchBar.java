@@ -50,7 +50,7 @@ public class clientSearchBar extends AppCompatActivity {
 
             }
         };
-        databaseReference.child("users").addListenerForSingleValueEvent(event);
+        databaseReference.addListenerForSingleValueEvent(event);
 
 
     }
@@ -60,9 +60,10 @@ public class clientSearchBar extends AppCompatActivity {
         ArrayList<String> names = new ArrayList<>();
         if(snapshot.exists())
         {
-            for (DataSnapshot ds:snapshot.getChildren())
+            for (DataSnapshot ds:snapshot.child("users").getChildren())
             {
                 String name = ds.child("username").getValue(String.class);
+                System.out.print(name);
                 names.add(name);
             }
 
@@ -90,7 +91,7 @@ public class clientSearchBar extends AppCompatActivity {
 
                 if(snapshot.exists()){
                     ArrayList<String> listusers = new ArrayList<>();
-                    for(DataSnapshot ds:snapshot.getChildren()){
+                    for(DataSnapshot ds:snapshot.child("users").getChildren()){
                         // User user = new User(ds.child("username").getValue(String.class), ds.child("email").getValue(String.class));
                         listusers.add(ds.child("username").getValue(String.class)+"\n"+ds.child("email").getValue(String.class));
                         System.out.print(listusers.toString());

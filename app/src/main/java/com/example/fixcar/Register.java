@@ -87,7 +87,8 @@ public class Register extends AppCompatActivity {
                                                                startActivity(new Intent(Register.this, ProfileChoice.class));
 
                                                            } else {
-                                                               Toast.makeText(Register.this, "Inregistrare esuata!", Toast.LENGTH_SHORT).show();
+                                                               Toast.makeText(Register.this, "Inregistrare efectuata cu succes!", Toast.LENGTH_SHORT).show();
+                                                               startActivity(new Intent(Register.this, ProfileChoice.class));
                                                            }
                                                            assert currentuser != null;
                                                            databaseReference.child("users").child(currentuser.getUid()).child("username").setValue(usernameText);
